@@ -7,7 +7,7 @@ description = "System monitor for SigmaOS"
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["sigmasystemmonitor"]
 depends_on = ["SigmaOS-system"]
 
 [maturity]

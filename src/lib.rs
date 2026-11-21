@@ -4,6 +4,9 @@
 //! Real implementation: monitors, events, validation, deterministic storage.
 //! Replaces the placeholder stub.
 
+/// System monitoring module (CPU, memory, disk, network, temperature).
+pub mod sigmasystemmonitor;
+
 use std::collections::BTreeMap;
 use std::fmt;
 
