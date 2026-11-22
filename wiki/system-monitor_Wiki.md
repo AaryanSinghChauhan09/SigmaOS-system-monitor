@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-system-monitor Component Wiki
+# SigmaOS-system-monitor Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-system-monitor provides System monitor for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-system-monitor provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-system-monitor Abstraction
-- Fail-Fast on SigmaOS-system-monitor Initialization Errors
-- Deterministic SigmaOS-system-monitor Setup
-- Clear Abstraction Over SigmaOS-system-monitor APIs
-- Composition over Inheritance for SigmaOS-system-monitor extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-system-monitor Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-system-monitor Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-system-monitor Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-system-monitor APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-system-monitor extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-system-monitor follows a SigmaOS-system-monitor pattern:
+SigmaOS-system-monitor follows a SigmaOS-system-monitor pattern:
 - **SigmaOS-system-monitor Core**: Provides SigmaOS-system-monitor support, SigmaOS-system-monitor management, and SigmaOS-system-monitor tracking
 - **Management**: Supports SigmaOS-system-monitor management, SigmaOS-system-monitor configuration, and SigmaOS-system-monitor lifecycle
 - **Tracking**: Supports SigmaOS-system-monitor status, SigmaOS-system-monitor tracking, and SigmaOS-system-monitor lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-system-monitor follows a SigmaOS-system-monitor pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-system-monitor by given configuration
--  - Register a SigmaOS-system-monitor by given name
--  - Get SigmaOS-system-monitor status and SigmaOS-system-monitor availability
--  - Track SigmaOS-system-monitor management and SigmaOS-system-monitor tracking
+- Manage a SigmaOS-system-monitor by given configuration
+- Register a SigmaOS-system-monitor by given name
+- Get SigmaOS-system-monitor status and SigmaOS-system-monitor availability
+- Track SigmaOS-system-monitor management and SigmaOS-system-monitor tracking
 - Error types for SigmaOS-system-monitor failure scenarios or unsupported SigmaOS-system-monitor types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-system-monitor init, SigmaOS-system-monitor management)
 3. **Assert**: Verify the expected SigmaOS-system-monitor results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-system-monitor initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-system-monitor failure scenarios
 - Unit tests provided for SigmaOS-system-monitor management and configuration
